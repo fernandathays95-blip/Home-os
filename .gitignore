@@ -1,0 +1,75 @@
+# -------------------------------------------------------------------------
+# ARQUIVOS GERAIS DE PROJETOS E SISTEMAS OPERACIONAIS
+# -------------------------------------------------------------------------
+# Logs de debug e cache
+*.log
+*.swp
+*.bak
+*.orig
+.DS_Store # Arquivos de cache do macOS
+Thumbs.db # Arquivos de cache do Windows
+.vscode/ # Configurações de IDE (se não forem compartilhadas)
+
+# -------------------------------------------------------------------------
+# ARQUIVOS DE COMPILAÇÃO DO KERNEL E DRIVERS (C/C++)
+# -------------------------------------------------------------------------
+# Binários e Objetos
+*.o      # Arquivos objeto
+*.ko     # Módulos de Kernel (Kernel Objects)
+*.mod
+*.mod.o
+*.mod.c
+
+# Arquivos de linkagem e executáveis
+*.so     # Bibliotecas compartilhadas
+*.a      # Bibliotecas estáticas
+*.out    # Executáveis
+*.elf    # Executáveis binários
+
+# Arquivos gerados pelo MAKE/Build System
+*.d
+.depend
+.config  # O arquivo .config do Kernel (a menos que você queira rastreá-lo)
+.tmp_versions/
+vmlinux  # O binário final do Kernel
+
+# Ferramentas de Buildroot/Yocto/etc.
+/build/ # A pasta onde o Buildroot ou Yocto faz a maioria das compilações
+/output/ # Pasta de saída final do sistema (imagens de disco, etc.)
+
+# -------------------------------------------------------------------------
+# ARQUIVOS DE INTERFACE GRÁFICA (QT/QML)
+# -------------------------------------------------------------------------
+# Arquivos de projeto Qt/IDE
+*.pro.user
+*.creator
+
+# Metadados de compilação Qt
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+
+# Arquivos de cache/debug de QT
+*.qmlc
+*.qmlproject.user
+QmlDebug.txt
+
+# -------------------------------------------------------------------------
+# ARQUIVOS DE IDE (Ex: CLion, VSCode, Eclipse)
+# -------------------------------------------------------------------------
+# Para quem usar CLion/JetBrains IDEs
+.idea/
+
+# Para quem usar Eclipse
+.settings/
+.project
+.classpath
+
+# -------------------------------------------------------------------------
+# ARQUIVOS DE PACOTE FINAL (FLASHEÁVEIS)
+# -------------------------------------------------------------------------
+# Arquivos que você "flasha" na geladeira, não devem ir para o Git
+*.img
+*.iso
+*.bin
+
